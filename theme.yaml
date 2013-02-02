@@ -1,0 +1,29 @@
+###########################################################################################
+#
+#  THEME VARIABLES
+#
+###########################################################################################
+
+# Theme name
+theme_name: Svtble
+
+# Accent Color in Hex without the # sign
+accent_color: 52453e
+
+# Logo in the circle
+logo_img: stag.png
+
+# Site subtitle
+site_subtitle: Web Craftsman
+
+# Site description
+site_desc: I talk about whatever I want!
+
+# Site link without the http:// for the left nav
+display_url: blainsmith.com
+
+# Email address
+email: rebelgeek@blainsmith.com
+
+# Twitter handle without the @ sign
+twitter: blainsmith

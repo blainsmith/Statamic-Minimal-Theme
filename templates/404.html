@@ -1,0 +1,20 @@
+<section id="main" data-role="main">
+  <header>
+		{{ theme:partial src="current_date" }}
+  </header>
+
+  <article class="post">
+    <div class="post-body">
+      <h2>{{ title }}</h2>
+      {{ content }}
+    </div>
+  </article>
+
+  <footer>
+    <nav>
+      <a href="{{ _site_url }}">&larr;&nbsp;&nbsp;&nbsp;Full Blog</a>
+    </nav>
+
+    {{ theme:partial src="copyright" }}
+  </footer>
+</section>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+  <title>{{ _site_name }}</title>
+
+    <link rel="alternate" type="application/rss+xml" href="{{ _site_url }}/blog/feed">
+    <link rel="stylesheet" href="{{ theme:css }}" />
+    <meta name="description" content="{{ site_desc }}" />
+
+    <style type="text/css">
+      #sidebar nav a:hover,
+      footer nav a {
+        color: #{{ accent_color }};
+      }
+      #sidebar nav a:hover,
+      blockquote,
+      footer nav a {
+        border-color: #{{ accent_color }};
+      }
+      #sidebar #logo {
+       background-color: #{{ accent_color }};
+      }
+      #sidebar #logo a {
+        background-image: url({{ theme:img src="{{ logo_img }}" }});
+      }
+    </style>
+</head>
+<body>
+  <header id="sidebar">
+
+    <figure id="logo">
+      <a href="{{ _site_url }}">{{ _site_name }}</a>
+    </figure>
+
+    <h1><a href="{{ _site_url }}">{{ _site_name }}</a></h1>
+    <h2><a href="{{ _site_url }}">{{ site_subtitle }}</a></h2>
+    <h3>{{ site_desc }}</h3>
+
+    <nav>
+      <ol>
+        <li><a href="{{ _site_url }}">{{ display_url }}</a></li>
+        <li><a href="http://twitter.com/{{ twitter }}">@{{ twitter }}</a></li>
+        <li><a href="mailto:{{ email }}?subject=hi">say hello</a></li>
+        <li><a href="{{ _site_url }}/blog/feed">feed</a></li>
+      </ol>
+    </nav>
+
+    <aside id="statamic">
+      <a href="http://statamic.com">statamic</a>
+    </aside>
+
+  </header>
+
+  {{ layout_content }}
+
+</div>
+</body>
+</html>

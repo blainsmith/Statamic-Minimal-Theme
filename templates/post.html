@@ -1,0 +1,21 @@
+<section id="main" data-role="main">
+  <header>
+    <time datetime="{{ datestamp }}">{{ datestamp format="F jS, Y" }}</time>
+  </header>
+
+  <article class="post">
+    <div class="post-body">
+      <h2><a href="{{ url }}">{{ title }}</a></h2>
+      {{ content }}
+    </div>
+    {{ theme:partial src="tweet" }}
+  </article>
+
+  <footer>
+    <nav>
+      <a href="{{ _site_url }}">&larr;&nbsp;&nbsp;&nbsp;Full Blog</a>
+    </nav>
+
+    {{ theme:partial src="copyright" }}
+  </footer>
+</section>

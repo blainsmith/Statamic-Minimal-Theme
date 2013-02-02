@@ -1,0 +1,30 @@
+<section id="main" data-role="main">
+  <header>
+    {{ theme:partial src="current_date" }}
+  </header>
+
+  {{ entries:listing folder="blog" limit="5" }}
+  <article class="post">
+    <div class="post-body">
+      <h2><a href="{{ url }}">{{ title }}</a></h2>
+      {{ content }}
+    </div>
+    {{ theme:partial src="tweet" }}
+  </article>
+  {{ /entries:listing }}
+
+  <footer>
+    {{ entries:pagination folder="blog" limit="5"}}
+    <nav>
+      {{ if previous_page }}
+        <a href="{{ previous_page }}" id="prev">&larr;&nbsp;&nbsp;&nbsp;Newer</a>
+      {{ endif }}
+      {{ if next_page }}
+        <a href="{{ next_page }}" id="next">Continue&nbsp;&nbsp;&nbsp;&rarr;</a>
+      {{ endif }}
+    </nav>
+    {{ /entries:pagination }}
+
+    {{ theme:partial src="copyright" }}
+  </footer>
+</section>
