@@ -8,6 +8,9 @@ Some of Svbtle's sites:
 * http://philosophically.com/
 * http://wayoftheduck.com/
 
-## Theme Settings
+## Installing
 
-Edit the `theme.yaml` to set some settings.
+1. Download the zip file (or clone via git) and unzip it or clone the repo into /_themes/.
+2. Ensure the folder name is `svbtle`.
+3. Set theme setting to `_theme: svbtle` in `/_config/settings.yaml`.
+4. Set your custom theme settings in `/_themes/svbtle/theme.yaml`.
